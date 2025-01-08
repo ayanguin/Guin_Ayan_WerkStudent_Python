@@ -1,6 +1,9 @@
 # WerkStudent_Python
 Submitted by Ayan Guin.
 
+# Google drive link for the executable(.exe) file
+https://drive.google.com/uc?export=download&id=1aOW_42n6SmVUFw0oGne123U680YAaq2h
+
 ## Overview
 
 This repository contains the interview task for the WerkStudent position in Python. The goal is to collect data from two sample invoices, create an Excel file with two sheets, and generate a CSV file. Additionally, an executable file should be provided to run the code.
@@ -102,9 +105,10 @@ This repository contains the interview task for the WerkStudent position in Pyth
 
 ## Problem Reporting
 
+- For the .exe file, please use the google drive link (mentioned above) to download the file and place it in the same folder. The file size is bit large (40mb) thus git is not allowing me to upload the file and I am not able to push the .exe file to the fork through comand line. I think it required to create a pull request to do so. I don't know any alternative way rather than this. I tested the links and codes, and all are working completely fine.
+
 - As per the instruction, I have extract the specific values from the 2 PDFs and created the Excel and CSV accordingly. My program is designed to summarise the value based on the date and document name in CSV file, as the instructions were to fetch only one value from each documents, thus the resultant output is looks like nothing is happening there with the final output. If we have chances to extract more values from the pdfs it would have give more appropriate output.
 
-- I am using mac os(Silicon), so the generated executable file is only compatible with mac os(silicon), I am not sure if it could be run using the mac os(Intel) or windows pc, as I have no access to those machines during the whole implementation.
 
 
 
