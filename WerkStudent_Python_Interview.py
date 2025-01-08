@@ -36,7 +36,7 @@ date = date_obj.strftime("%d/%m/%Y")
 
 # Extract the value for column and the value from the last row of the extracted data
 value_column = extracted_vals.values[len(extracted_vals)-1][0]
-value = float(extracted_vals.values[len(extracted_vals)-1][1].replace('€', '').replace(" ","").replace(',', '.')) # Further trimming the data as per our need and changing the data type to float for arithmetic calculation.
+value = float(extracted_vals.values[len(extracted_vals)-1][1].replace('€', '').replace(" ","").replace(',', '.')) # Further trimming the data (replacing/trimming symboll, space, ',') as per our need and changing the data type to float for arithmetic calculation.
 
 
 
@@ -55,7 +55,7 @@ value2 = float(df2.values[len(df2)-1][1].split("$")[1])
 
 # Parcing through the rxtracted text lines from the pdf
 for i in range (0,len(pdf2.pages[0].extract_text_lines())):
-    # Search for the line containing "Invoice.*2016" to identify the date
+    # Search for the line containing "Invoice date: Nov 26, 2016" to fetching the date
     if re.search(pattern="^Invoice.*2016$", string=pdf2.pages[0].extract_text_lines()[i]['text']):
         # Storing the date and the column for further processing in two veriables
         date2_column = pdf2.pages[0].extract_text_lines()[i]['text'].split(":")[0] 

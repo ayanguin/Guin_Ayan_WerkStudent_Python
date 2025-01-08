@@ -1,9 +1,6 @@
 # WerkStudent_Python
 Submitted by Ayan Guin.
 
-# Google drive link for the executable(.exe) file
-https://drive.google.com/uc?export=download&id=1aOW_42n6SmVUFw0oGne123U680YAaq2h
-
 ## Overview
 
 This repository contains the interview task for the WerkStudent position in Python. The goal is to collect data from two sample invoices, create an Excel file with two sheets, and generate a CSV file. Additionally, an executable file should be provided to run the code.
@@ -49,7 +46,7 @@ This repository contains the interview task for the WerkStudent position in Pyth
 2. **Excel File Creation**:
     - The script creates an Excel file with two sheets.
     - Sheet 1 contains the file name, extracted data, and value.
-    - Sheet 2 contains a pivot table summarizing the data by date and document name.
+    - Sheet 2 contains a pivot table summarising the data by date and document name.
 
 3. **CSV File Creation**:
     - The script generates a CSV file with the extracted data, including headers, and uses a semicolon as the separator.
@@ -63,11 +60,12 @@ This repository contains the interview task for the WerkStudent position in Pyth
 ## Running the Code
 
 1. Place the sample invoices in the same folder as the executable file.
-2. If needed, for setting up the environment use the requirements.text file.
+2. For setting up the environment use the requirements.text file.
 3. Run the executable file to execute the code and generate the Excel and CSV files.
+4. The generated output files will be saved in the same folder. (No need to delete the output files in case of RE-RUN, it will handle by the script.)
 
 ## Explanation of the code
-- This Python code processes two invoices in PDF format and creates an Excel file and a CSV file summarizing the information.
+- This Python code processes two invoices in PDF format and creates an Excel file and a CSV file summarising the information.
 
 1. **Setting Up**: 
 - The script first ensures the code uses German locale settings for proper date parsing.
@@ -80,7 +78,7 @@ This repository contains the interview task for the WerkStudent position in Pyth
 - Then it  selects the relevant rows from the table, excluding rows with missing information in any column.
 - Then it  extracts the date from the pdf.
 - Then it  converts the extracted date from text format (e.g., "15. März 2024") to a more standard format ("dd/mm/yyyy").
-- Then it  will  extracts the  required value (Total) and cleans up any symbols or extra spaces in the value and converts it to a number for further operationas.
+- Then it  will  extracts the  required value (Total) and cleans up any symbols or extra spaces in the value and converts it to a number for further operations.
 
 3. **Processing Invoice 2 (sample_invoice_2.pdf)**:
 - The program will again follows similar steps as for invoice 1: opening the PDF, extracting the values, selecting relevant values, and so on.
@@ -105,9 +103,7 @@ This repository contains the interview task for the WerkStudent position in Pyth
 
 ## Problem Reporting
 
-- For the .exe file, please use the google drive link (mentioned above) to download the file and place it in the same folder. The file size is bit large (40mb) thus git is not allowing me to upload the file and I am not able to push the .exe file to the fork through comand line. I think it required to create a pull request to do so. I don't know any alternative way rather than this. I tested the links and codes, and all are working completely fine.
-
-- As per the instruction, I have extract the specific values from the 2 PDFs and created the Excel and CSV accordingly. My program is designed to summarise the value based on the date and document name in CSV file, as the instructions were to fetch only one value from each documents, thus the resultant output is looks like nothing is happening there with the final output. If we have chances to extract more values from the pdfs it would have give more appropriate output.
+- As per the instruction, I have extract the specific values from the 2 PDFs and created the Excel and CSV accordingly. My program is designed to summarise the value based on the date and document name in a pivot table. The instructions were to fetch only one value from each documents, thus the resultant output in pivot table is looks like nothing is happening there with the final output. If I had a chance to extract more data from the pdfs it would have give more good looking output. 
 
 
 
